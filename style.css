@@ -1,6 +1,5 @@
 :root {
   --primary-color: #1f3d3a;
-  --accent-color: #c98c5d;
   --cream-color: #f7f1e8;
   --rose-color: rgba(216, 167, 167, 0.38);
   --dark-color: #1c1c1c;
@@ -26,12 +25,12 @@ h4 {
   font-family: var(--Heading-Font-Family);
   font-weight: 700;
   color: var(--text-color);
-  text-align: center;
 }
 
 h1 {
   font-size: 50px;
   line-height: 1.05;
+  text-align: center;
 }
 
 h2 {
@@ -48,7 +47,6 @@ p {
   padding: 10px 24px;
   font-family: var(--nav-font-family);
   background-color: transparent;
-  color: var(--cream-color);
   border-bottom: 1px solid rgba(247, 241, 232, 0.18);
   box-shadow: none;
 }
@@ -119,28 +117,24 @@ p {
   padding: 8px 12px;
 }
 
-.attractions-page .navbar {
+.inner-page .navbar-nav .nav-link,
+.inner-page .navbar-nav .nav-link.active,
+.inner-page .navbar-nav .nav-link:hover,
+.inner-page .navbar-nav .nav-link:focus {
   color: var(--dark-color);
 }
 
-.attractions-page .navbar-nav .nav-link,
-.attractions-page .navbar-nav .nav-link.active,
-.attractions-page .navbar-nav .nav-link:hover,
-.attractions-page .navbar-nav .nav-link:focus {
-  color: var(--dark-color);
-}
-
-.attractions-page .navbar-nav .nav-link.active,
-.attractions-page .navbar-nav .nav-link:hover,
-.attractions-page .navbar-nav .nav-link:focus {
+.inner-page .navbar-nav .nav-link.active,
+.inner-page .navbar-nav .nav-link:hover,
+.inner-page .navbar-nav .nav-link:focus {
   background: rgba(28, 28, 28, 0.08);
 }
 
-.attractions-page .navbar-toggler {
+.inner-page .navbar-toggler {
   border-color: rgba(28, 28, 28, 0.28);
 }
 
-.attractions-page .navbar-toggler-icon {
+.inner-page .navbar-toggler-icon {
   filter: none;
 }
 
@@ -193,7 +187,6 @@ p {
 }
 
 .hero h1 {
-  font-family: var(--Heading-Font-Family);
   font-size: 60px;
   line-height: 2;
   color: var(--cream-color);
@@ -330,7 +323,6 @@ footer .email-link:hover {
 
 .card {
   background-color: var(--rose-color);
-  display: block;
   padding: 16px;
   margin: 30px 0;
   overflow: hidden;
