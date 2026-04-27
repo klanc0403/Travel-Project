@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelly's Opera Portfolio</title>
+    <meta name="description" content="Kelly is a professional front-end developer and opera singer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+ <nav class="navbar navbar-expand-lg bg-white">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/flag.png" class="icon">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Tourism Office</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Explore Lyon
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="restaurants.html">Restaurants</a></li>
+            <li><a class="dropdown-item" href="attractions.html">Attractions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <section class="hero">
+      <h2>Travel</h2>
+      <h1>Welcome to Lyon</h1>
+      <h2 class="mb-3">Culture, food, history, and visitory planning</h2>
+
+      <a href="contact.html#contact" class="btn btn-branding">Office de Tourisme</a>
+    </section>
+   
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-6 d-none d-md-block">
+          <img
+            src="images/fourviere.png"
+            class="img-fluid rounded project-image"
+            alt="Notre Dame de fourviere"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <div class="project-description">
+            <h2 class="mb-4">Sightseeing</h2>
+            <p class="mb-4 text-muted performance-text">
+              Things to do in Lyon
+            </p>
+            <a href="attractions.html" class="btn btn-branding-outline">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+          <div class="project-description">
+            <h2 class="mb-4">Bouchons lyonnais</h2>
+            <p class="mb-4 text-muted performance-text">
+              Where to eat in Lyon
+            </p>
+            <a href="restaurants.html" class="btn btn-branding-outline">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-none d-md-block">
+          <img
+            src="images/federations.png"
+            class="img-fluid rounded project-image"
+            alt="Cafe des federations"
+          />
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <div>
+            This project was coded by Kelly Lançon, is open-sourced on <a href="https://github.com/klanc0403">Github</a> and hosted on <a href="https://portfolioprojectweek4.netlify.app/">Netlify</a>.
+        </div>
+        <br>
+    <a href="https://www.visiterlyon.com/" class="email-link">VisiterLyon.com</a>
+  </footer>
+ 
+</body>
+</html>
