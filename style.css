@@ -26,17 +26,18 @@ h4 {
   font-family: var(--Heading-Font-Family);
   font-weight: 700;
   color: var(--text-color);
+  text-align: center;
 }
 
 h1 {
   font-size: 50px;
   line-height: 1.05;
-  text-align: center;
 }
 
 h2 {
   font-size: 36px;
 }
+
 
 p {
   font-size: 14px;
@@ -378,4 +379,13 @@ footer .email-link:hover {
   .grid-2-columns {
     grid-template-columns: 1fr;
   }
+}
+
+.instagram-media {
+  aspect-ratio: 16 / 9;
+}
+
+.gallery-wrapper {
+  padding-top: 50px;
+  line-height: 3;
 }
