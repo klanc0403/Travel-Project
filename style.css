@@ -4,6 +4,8 @@
   --cream-color: #f7f1e8;
   --rose-color: #d8a7a7;
   --dark-color: #1c1c1c;
+  --heading-font-family: "Playfair", serif;
+  --default-font-family: "Poppins", serif;
 }
 
 body {
@@ -104,79 +106,7 @@ p {
   box-shadow: 0 10px 25px rgba(108, 99, 255, 0.2);
 }
 
-.featured-intro {
-  padding: 60px 20px 30px;
-  margin: 0;
-  color: var(--muted-color);
-}
 
-.project-description {
-  padding: 80px 60px;
-}
-
-.performance-text {
-  padding: 0;
-  color: var(--muted-color);
-}
-
-.project-image {
-  max-width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 0 15px 40px rgba(39, 33, 66, 0.14);
-}
-
-.about-section {
-  padding: 140px 20px 100px;
-  text-align: center;
-}
-
-.about-section h2 {
-  font-family: var(--default-font-family);
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 2;
-  color: var(--muted-color);
-}
-
-.about-section-content {
-  margin: 30px;
-}
-
-.about-image {
-  max-height: 500px;
-  object-fit: cover;
-  border-radius: 18px;
-  box-shadow: 0 15px 40px rgba(39, 33, 66, 0.14);
-}
-
-.performance-page {
-  padding: 90px 20px;
-}
-
-.performance-summary {
-  max-width: 760px;
-  margin: 0 auto;
-  text-align: center;
-  color: var(--muted-color);
-}
-
-.performance-page h2 {
-  font-size: 30px;
-}
-
-.performance-page h3 {
-  font-size: 28px;
-  color: var(--branding-dark);
-}
-
-.icon {
-  max-height: 54px;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(39, 33, 66, 0.12);
-}
 
 footer {
   text-align: center;
@@ -223,13 +153,10 @@ footer .email-link:hover {
   .hero {
     padding: 90px 20px 70px;
   }
+}
 
-  .project-description {
-    padding: 30px 20px;
-    text-align: center;
-  }
-
-  .about-section {
-    padding: 90px 20px;
-  }
+.map-container {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
