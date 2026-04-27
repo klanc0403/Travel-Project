@@ -4,57 +4,133 @@
   --cream-color: #f7f1e8;
   --rose-color: #d8a7a7;
   --dark-color: #1c1c1c;
-  --heading-font-family: "Playfair", serif;
-  --default-font-family: "Poppins", serif;
+  --text-color: var(--dark-color);
+  --muted-color: #6f7775;
+  --branding-color: var(--primary-color);
+  --branding-dark: #142927;
+  --Heading-Font-Family: "Playfair", serif;
+  --default-font-family: "Lato", serif;
+  --nav-font-family: "Poppins", serif;
 }
 
 body {
   font-family: var(--default-font-family);
   color: var(--text-color);
-  background: #fffdfd;
+  background: var(--cream-color);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: var(--heading-font-family);
+  font-family: var(--Heading-Font-Family);
   font-weight: 700;
   color: var(--text-color);
 }
 
 h1 {
-  font-size: 76px;
+  font-size: 50px;
   line-height: 1.05;
 }
 
 h2 {
-  font-size: 56px;
+  font-size: 36px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
 }
 
 .navbar {
-  padding: 14px 30px;
-  box-shadow: 0 8px 30px rgba(39, 33, 66, 0.08);
+  padding: 10px 24px;
+  font-family: var(--nav-font-family);
+  border-bottom: 1px solid rgba(31, 61, 58, 0.1);
+  box-shadow: 0 4px 18px rgba(31, 61, 58, 0.06);
+  background-color: var(--primary-color);
+  color: var(--accent-color);
 }
 
-.nav-link {
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar .icon {
+  display: block;
+  width: 44px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.navbar .navbar-nav {
+  gap: 6px;
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+
+.navbar-nav .nav-link {
   color: var(--text-color);
   font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-.nav-link:hover,
-.dropdown-item:hover {
+.navbar-nav .nav-link.active {
   color: var(--branding-color);
+  background: rgba(31, 61, 58, 0.08);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--primary-color);
+  background: rgba(31, 61, 58, 0.06);
 }
 
 .dropdown-menu {
-  border: none;
-  box-shadow: 0 12px 30px rgba(39, 33, 66, 0.12);
+  margin-top: 8px;
+  padding: 8px;
+  font-family: var(--default-font-family);
+  border: 1px solid rgba(31, 61, 58, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 14px 32px rgba(31, 61, 58, 0.12);
+}
+
+.dropdown-item {
+  color: var(--text-color);
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.navbar-toggler {
+  border-color: rgba(31, 61, 58, 0.18);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(31, 61, 58, 0.16);
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    padding: 10px 18px;
+  }
+
+  .navbar-collapse {
+    padding-top: 12px;
+  }
+
+  .navbar .navbar-nav {
+    gap: 4px;
+    margin-left: 0;
+  }
+
+  .dropdown-menu {
+    margin-top: 4px;
+    box-shadow: none;
+  }
 }
 
 .hero {
@@ -62,22 +138,35 @@ p {
       rgba(31, 61, 58, 0.65),
       rgba(31, 61, 58, 0.35)
     ),
-    url("images/lyoncity.png") center/cover no-repeat;
+    url("images/lyoncity.png") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2;
+    padding: 20px;
+    max-height: 400px;
+}
+
+.hero h1 {
+  font-family: var(--Heading-Font-Family);
+  font-size: 60px;
+  line-height: 2;
+  color: var(--cream-color);
 }
 
 .hero h2 {
   font-family: var(--default-font-family);
   font-weight: 400;
-  font-size: 22px;
-  line-height: 2;
-  color: var(--muted-color);
+  font-size: 18px;
+  color: var(--cream-color);
 }
 
 .btn-branding,
 .btn-branding-outline {
   border-radius: 999px;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1;
   padding: 14px 28px;
   transition: all 0.25s ease;
 }
@@ -86,6 +175,7 @@ p {
   background: var(--branding-color);
   color: white;
   box-shadow: 0 10px 25px rgba(108, 99, 255, 0.28);
+  font-family: var(--default-font-family);
 }
 
 .btn-branding:hover {
@@ -105,7 +195,6 @@ p {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(108, 99, 255, 0.2);
 }
-
 
 
 footer {
