@@ -1,0 +1,1 @@
+This site is an ode to Lyon, France: view the Attractions page to discover three of the main attractions in Lyon, the Restaurants page to learn more about two famous bouchon restaurants in Lyon, and follow the links to the official site of the Office of Tourism.
